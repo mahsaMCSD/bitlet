@@ -1,0 +1,117 @@
+:root {
+    --color-primary: #2f55d4;
+    --color-secondary: #22C58B;
+    --color-red:#006D92
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-text-black:#2B2B2B;
+    --color-text-blue:#006D92;
+    --color-gray-800:#777777;
+    --color-gray-700:#929292;
+    --color-gray-600:#AAAAAA;
+    --color-gray-500:#C0C0C0;
+    --color-gray-400:#DCDCDC;
+    --color-gray-300:#ECECEC;
+    --color-gray-200:#F5F5F5;
+    --color-gray-100:#F8F8F8; 
+    --color-red:#F04F62;
+    --color-green:#22C58B;
+    --color-gray:#F2F2F2;
+}
+@font-face {
+    font-family: 'Yekan';
+    src: url("/front-end/fonts/YekanBakh-Medium/YekanBakh-Medium.ttf");
+}
+
+// USAGE
+body {
+    font-family: 'Yekan' !important;
+    font-size: 13px;
+    line-height: 1.5rem;
+}
+.h7{
+    font-size: 0.8rem;
+}
+.btn{
+    border-radius: 0.2rem;
+}
+.bl-bg-primary {
+    background-color: var(--color-primary);
+}
+
+.bl-bg-secondary {
+    background-color: var(--color-secondary);
+}
+.bl-bg-gray-300 {
+    background-color: var(--color-gray-300);
+}
+.bg-red {
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+.bg-white {
+    background-color: var(--color-white);
+}
+.color-blue{
+    color:var(--color-primary);
+}
+.text-gray{
+    color:#828282;
+}
+.text-red{
+    color:var(--color-red);
+}
+.text-green{
+    color:#22C58B;
+}
+.text-secondary{
+    color:var(--color-secondary) !important;
+}
+.font-bold{
+    font-weight: 700;
+}
+.font-normal{
+    font-weight: 200;
+}
+.box-shadow{
+    box-shadow: 0px 4px 40px 0px #0000001A;
+    
+}
+.card-shadow{
+    box-shadow: 0px 14px 50px 0px rgba(61, 61, 61, 0.1);
+}
+.opacity-75{
+    opacity:75%;
+}
+.opacity-30{
+    opacity:30%;
+}
+.t-0{
+    top:0;
+}
+.radius-5{
+    border-radius: 5px;  
+}
+.h-40{
+    height: 40px;
+}
+.pr-10{
+    padding-right: 10rem !important;
+}
+.section-bg-color{
+    background-color: #FAFAFA;
+}
+.l-0{
+    left:0;
+}
+.linear-bg{
+    background:linear-gradient(92.1deg, #3565C3 9.2%, #2B1485 95.15%);
+}
+.dr-r{
+    direction: rtl;
+}
+.dr-l{
+    direction: ltr;
+}
+  
+  

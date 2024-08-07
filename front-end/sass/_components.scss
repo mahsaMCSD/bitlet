@@ -1,0 +1,292 @@
+//////////////////////////////////
+//BUTTON
+.bl-btn-size {
+    font-size: 13px;
+}
+.bl-btn-secondary {
+    border-radius: 5px;
+    border-color: var(--color-secondary);
+}
+.btn-outline-secondary {
+    border-color: var(--color-gray-200);
+}
+.bl-outline-primary {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+////////////////////////////////////
+//HEADER
+.header-main {
+    background-color: #1237da;
+    background-image: url("../img/header-bg.svg");
+    & .header-dots {
+        right: 26rem;
+    }
+}
+/////////////////////////////////////
+//FOOTER
+footer {
+    box-shadow: 0px 0px 50px rgba(20, 82, 155, 0.1);
+}
+footer ul {
+    list-style: none;
+}
+header .logo {
+    background-image: url("../img/Rectangle 2983.svg");
+}
+//////////////////////////////////////////
+//DROPDOWN
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    width: 100%;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+    input {
+        border-bottom: 1px solid var(--color-gray-300);
+        font-size: inherit;
+    }
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: var(--color-gray-300);
+}
+
+.show {
+    display: block;
+}
+.bt-trade-content .dropdown-flag {
+    gap: 1rem;
+}
+
+/////////////////////////////////////
+//SWIPPER
+
+/////////////////////////////////////
+//TABLE
+.bl-main-table th,
+.bl-main-table td {
+    border: none;
+    vertical-align: baseline;
+}
+.bl-main-table thead th {
+    border-bottom: 1px solid #f6f6f6;
+}
+.signal-bg {
+    width: 85px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+.signal-bg-color-gray {
+    background: #f2f2f2;
+}
+.signal-bg-color-red {
+    background: var(--color-red);
+}
+.signal-bg-color-green {
+    background: var(--color-green);
+}
+/////////////////////////////////
+//BLOGS
+.blog .date-bg {
+    background: linear-gradient(92.1deg, #3565c3 9.2%, #2b1485 95.15%);
+    width: 67.85px;
+    height: 54px;
+    color: #fff;
+    border-radius: 3px;
+}
+////////////////////////////////
+//APPLICATION
+.application-display .img-three-app {
+    right: 13rem;
+    top: -6rem;
+}
+//////////////////////////////////
+//REASON
+.reason-bitlet ul {
+    list-style: none;
+}
+.reason-big-circle {
+    bottom: 6rem;
+    left: 5rem;
+}
+.reason-small-circle {
+    width: 19px;
+    height: 19px;
+    left: 65px;
+    bottom: 5rem;
+}
+
+//////////////////////////////////////@at-root
+//PROGRESSBAR
+.card {
+    z-index: 0;
+    border: none;
+    position: relative;
+}
+
+#progressbar {
+    overflow: hidden;
+    color: var(--color-gray-700);
+}
+
+#progressbar .active {
+    color: var(--color-primary);
+}
+
+#progressbar li {
+    list-style-type: none;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+#progressbar #account:before {
+    content: "";
+    background-image: url("../img/icons/hand.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#progressbar #personal:before {
+    content: "";
+    background-image: url("../img/icons/upload.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    background: var(--color-gray-300);
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+}
+
+#progressbar li:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: var(--color-primary);
+}
+
+.progress {
+    height: 20px;
+}
+
+.progress-bar {
+    background-color: var(--color-primary);
+}
+/////////////////////////////////////////
+//UPLOAD
+.upload-placeholder {
+    border: 1px dashed #bdbdbd;
+    box-sizing: border-box;
+    border-radius: 5px;
+    position: relative;
+    height: 15rem;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.upload-placeholder .img-preview {
+    position: absolute;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type="file"] {
+    color: rgba(0, 0, 0, 0);
+}
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.custom-file-input {
+    z-index: 200;
+    opacity: unset;
+}
+.custom-file-input::before {
+    content: "انتخاب کنید";
+    display: block;
+    background-color: #22c58b;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    width: 102px;
+    height: 27.25px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    margin: auto;
+}
+//////////////////////////////////@at-root
+//AUTHORIZATION
+.unAuthorization-image {
+    background-image: url("/front-end/img/dots-red.svg");
+    background-repeat: no-repeat;
+}
+//////////////////////////////////////
+//LOGIN
+.login p,
+.login label {
+    font-size: 10px;
+}
+.login a {
+    text-decoration-style: dashed !important;
+}
+/////////////////////////////////////////
+//ALERT
+.alert-success {
+    background: linear-gradient(270deg, #22c58b 1.2%, #139a6a 98.03%);
+    box-shadow: 0px 1px 100px rgba(0, 0, 0, 0.1);
+}
+.alert .close {
+    left: 0;
+    right: unset;
+    top: unset;
+}
+////////////////////////////////////////////@at-root
+//NAV_PROFILE
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: var(--color-primary);
+}
+.profile-tabs a{
+    color:var(--color-black)
+}
+.nav-pills .nav-link{
+    border-radius: 00.2rem;
+}
+.user-header{
+    justify-content: flex-end;
+    gap: 1rem;
+}

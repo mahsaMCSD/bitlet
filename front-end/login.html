@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>bitlet survey</title>
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <Header class="w-100 py-3 bg-white box-shadow">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-between">
+          <a href="/" class="d-flex logo align-items-center col-md-2">
+            <img class="position-absolute" src="../front-end/img/logo.svg" />
+          </a>
+
+          <ul class="nav col-md-8">
+            <li><a href="#" class="nav-link px-2 link-secondary text-dark ml-2">نرخ لحظه ای ارز</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark text-dark opacity-75 ml-2">سوالات متداول</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark text-dark opacity-75 ml-2">آکادمی آموزش</a></li>
+
+          </ul>
+
+          <div class="col-md-2 text-end">
+            <button type="button" class="btn bl-bg-secondary text-white w-100 bl-btn-size">ورود / ثبت
+              نام</button>
+          </div>
+        </div>
+
+      </div>
+
+    </Header>
+    <section class="container-fluid py-5 section-bg-color">
+      <div class="col-md-4 mx-auto">
+        <div class="card border-0 card-shadow login mt-3 text-right">
+          <div class="card-body col-md-8 mx-auto">
+            <div class="logo text-center mt-4 mb-5">
+              <img src="./img/logo.svg" />
+            </div>
+            <div>
+              <h5 class="font-bold mb-4">ورود / ثبت نام</h5>
+              <label class="form-label font-bold mb-0">شماره تلفن خود را وارد کنید</label>
+
+              <div class="dropdown dr-l mb-4">
+                <button onclick="myFunction()" class="form-select form-control flex-column radius-5 p-0"><span
+                    class="dropdown-flag d-flex align-items-center justify-content-center col-md-5 bl-bg-gray-300 h-100 p-0"><img
+                      src="../front-end/img/flags/iran.svg" /><img width="8" class="ml-3"
+                      src="../front-end/img/icons/chevron-down.svg" /></span></button>
+                <div id="myDropdown" class="dropdown-content bg-white">
+                  <input type="text" class="form-control" placeholder="جتسجو ..." id="myInput"
+                    onkeyup="filterFunction()">
+                  <a href="#about">About</a>
+                  <a href="#base">Base</a>
+                  <a href="#blog">Blog</a>
+                  <a href="#contact">Contact</a>
+                  <a href="#custom">Custom</a>
+                  <a href="#support">Support</a>
+                  <a href="#tools">Tools</a>
+                </div>
+              </div>
+              <button type="button" class="btn bl-bg-primary text-white w-100 bl-btn-size h-40 mb-4">ورود به بیت لت</button>
+              <p class="text-muted">با ورود و یا ثبت نام در بیت لت شما <a>شرایط و قوانین</a> استفاده از سرویس های سایت و قوانین
+                حریم خصوصی آن را می‌پذیرید.</p>
+            </div>
+          </div>
+        </div> 
+         <!-- <div class="card border-0 card-shadow login mt-3 text-right">
+          <div class="card-body col-md-8 mx-auto">
+            <div class="logo text-center mt-4 mb-5">
+              <img src="./img/logo.svg" />
+            </div>
+            <div>
+              <h5 class="font-bold mb-4">وارد کردن رمز عبور</h5>
+              <label class="form-label font-bold mb-0">رمز عبور</label>
+
+              <input type="text" class="form-control text-left mb-3" id="validationDefault01" 
+               required>
+              <button type="button" class="btn bl-bg-primary text-white w-100 bl-btn-size h-40 mb-4">تایید</button>
+              <a class="text-center">ورود با رمز یکبار مصرف</a>
+            </div>
+          </div>
+        </div>  -->
+        <!-- <div class="card border-0 card-shadow login mt-3 text-right">
+          <div class="card-body col-md-8 mx-auto">
+            <div class="logo d-flex justify-content-start mt-4 mb-5">
+              <img class="ml-3" src="./img/icons/chevron-right.svg" />
+              <img src="./img/logo.svg" />
+            </div>
+            <div>
+              <h5 class="font-bold mb-4">کد تایید را وارد نمایید</h5>
+              <label class="form-label mb-0">حساب کاربری با شماره 0912343456 وجود ندارد.</label>
+              <label class="form-label mb-3">برای ساخت حساب جدید، کد تایید برای این شماره ارسال گردید.</label>
+
+              <div class="row mb-4">
+
+                <div class="col-3"><input type="text" class="w-100 form-control"></div>
+                <div class="col-3"><input type="text" class="w-100 form-control"></div>
+                <div class="col-3"><input type="text" class="w-100 form-control"></div>
+                <div class="col-3"><input type="text" class="w-100 form-control"></div>
+
+              </div>
+              <a class="text-center">ارسال مجدد کد تا ۵:۰۰ دیگر</a>
+              <button type="button" class="btn bl-bg-primary text-white w-100 bl-btn-size h-40 mb-4">تایید</button>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="card border-0 card-shadow login mt-3 text-right">
+          <div class="card-body col-md-8 mx-auto">
+            <div class="logo text-center mt-4 mb-5">
+              <img src="./img/logo.svg" />
+            </div>
+            <div>
+              <h5 class="font-bold mb-4">انتخاب رمز عبور</h5>
+              <p>با انتخاب رمز عبور ، دیگر نیازی به کد تایید برای ورود به سایت نمی باشد</p>
+              <label class="form-label font-bold mb-0">رمز عبور</label>
+
+              <input type="text" class="form-control text-left mb-3" id="validationDefault01" 
+               required>
+              <label class="form-label font-bold mb-0">تکرار رمز عبور</label>
+
+              <input type="text" class="form-control text-left mb-3" id="validationDefault01" 
+               required>
+               <div class="row">
+                 <div class="col-md-5">
+
+                   <button type="button" class="btn bl-bg-primary text-white h-40 mb-4">تغییر رمز </button>
+                 </div>
+                 <div class="col-md-7 px-0">
+
+                   <button type="button" class="btn bl-outline-primary h-40 mb-4">رمز عبور نمیخواهم</button>
+                 </div>
+             
+               </div>
+              
+            </div>
+          </div>
+          </div> -->
+     
+        </div>
+
+    </section>
+    <Footer class="text-right">
+      <div class="container d-flex pt-5">
+        <div class="col-md-3">
+          <span class="font-bold">پشتیبانی</span>
+          <ul class="pr-0 font-normal">
+            <li class="">تماس ما</li>
+            <li class="">درباره ما</li>
+            <li class="">قوانین و مقررات</li>
+            <li class="">تماس با ما</li>
+          </ul>
+        </div>
+        <div class="col-md-3 pr-0">
+          <span class="font-bold">خدمات</span>
+          <ul class="pr-0 font-normal">
+            <li class="">نرخ لحظه ای ارز</li>
+            <li class="">فرصت های شغلی</li>
+            <li class="">ورود / ثبت نام</li>
+          </ul>
+        </div>
+        <div class="col-md-2 pr-0">
+          <span class="font-bold">خدمات</span>
+          <ul class="pr-0 font-normal">
+            <li class="">نرخ لحظه ای ارز</li>
+            <li class="">فرصت های شغلی</li>
+            <li class="">ورود / ثبت نام</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <img class="ml-2 mb-3" src="../front-end/img/logo.svg" /><span class="font-bold">چیست؟</span>
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+            متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+            متنوع با هدف بهبود </p>
+        </div>
+      </div>
+    </Footer>
+  </div>
+</body>
+
+</html>

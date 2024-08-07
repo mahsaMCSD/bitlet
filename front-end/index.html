@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <title>bitlet</title>
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <Header class="w-100 pb-5 header-main">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center mb-5">
+          <a href="/" class="d-flex logo align-items-center justify-content-center">
+            <img src="../front-end/img/Rectangle 2983.svg">
+            <img class="position-absolute" src="../front-end/img/logo.svg" />
+          </a>
+
+          <ul class="nav col-12 col-md-8 mb-2 mb-md-0 ml-5">
+            <li><a href="#" class="nav-link px-2 link-secondary text-white ml-2">نرخ لحظه ای ارز</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark text-white opacity-75 ml-2">سوالات متداول</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark text-white opacity-75 ml-2">آکادمی آموزش</a></li>
+
+          </ul>
+
+          <div class="col-md-2 text-end mr-3 pl-0">
+            <button type="button" class="btn bl-bg-secondary text-white w-100 bl-btn-size">ورود / ثبت
+              نام</button>
+          </div>
+        </div>
+        <div class="header-content col-md-5 text-center text-white p-5 m-auto">
+          <img class="position-absolute t-0 header-dots" src="img/header-dots.svg" />
+          <h4 class="mb-4">خرید و فروش امن ارزهای دیجیتال</h4>
+          <p>بعد از احراز هویت و با امنیت کامل به خرید و فروش ارزهای خود مشغول باشید.بیت لت از انواع شبکه های رمز ارز
+            TRC20 , ERC20 ,BEP2 , BEP20 در هنگام خرید و فروش پشتیبانی می کند .</p>
+        </div>
+        <div class="bt-trade-content bg-white rounded-lg">
+          <div class="d-flex justify-content-around text-right mx-auto py-3">
+            <div class="col-md-4">
+              <label class="form-label font-bold mb-0">پرداخت میکنم</label>
+              <div class="dropdown">
+                <button onclick="myFunction()" class="form-select form-control flex-column radius-5 p-0"><span
+                    class="dropdown-flag d-flex align-items-center justify-content-center col-md-5 bl-bg-gray-300 h-100 p-0"><img
+                      src="../front-end/img/flags/iran.svg" /><span>تومان</span><img
+                      src="../front-end/img/icons/chevron-down.svg" /></span></button>
+                <div id="myDropdown" class="dropdown-content bg-white">
+                  <input type="text" class="form-control" placeholder="جتسجو ..." id="myInput"
+                    onkeyup="filterFunction()">
+                  <a href="#about">About</a>
+                  <a href="#base">Base</a>
+                  <a href="#blog">Blog</a>
+                  <a href="#contact">Contact</a>
+                  <a href="#custom">Custom</a>
+                  <a href="#support">Support</a>
+                  <a href="#tools">Tools</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1 d-flex justify-content-center align-items-end">
+
+              <img src="../front-end/img/transfer-trade.svg" />
+            </div>
+            <div class="col-md-4">
+              <label class="form-label font-bold mb-0">پرداخت میکنم</label>
+              <div class="dropdown">
+                <button onclick="myFunction()" class="form-select form-control flex-column radius-5 p-0"><span
+                    class="dropdown-flag d-flex align-items-center justify-content-center col-md-5 bl-bg-gray-300 h-100 p-0"><img
+                      src="../front-end/img/flags/bitcoin.svg" /><span>تومان</span><img
+                      src="../front-end/img/icons/chevron-down.svg" /></span></button>
+                <div id="myDropdown" class="dropdown-content bg-white">
+                  <input type="text" class="form-control" placeholder="جتسجو ..." id="myInput"
+                    onkeyup="filterFunction()">
+                  <a href="#about">About</a>
+                  <a href="#base">Base</a>
+                  <a href="#blog">Blog</a>
+                  <a href="#contact">Contact</a>
+                  <a href="#custom">Custom</a>
+                  <a href="#support">Support</a>
+                  <a href="#tools">Tools</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 d-flex align-items-end">
+              <button type="button" class="btn bl-bg-primary text-white w-100 bl-btn-size h-40">خرید بیت کوین</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </Header>
+    <section class="container-fluid py-5 section-bg-color">
+      <div class="container text-right pb-4">
+        <h6 class="color-blue">پرنوسان ترین ها</h6>
+        <h5 class="font-bold">نرخ لحظه ای ارزها</h5>
+      </div>
+      <!-- Slider main container -->
+      <div class="container">
+        <div class="swiper text-right mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ">
+              <div class="card border-0 card-shadow">
+                <div class="card-body row">
+                  <div class="col-md-3">
+                    <img src="../front-end/img/flags/xrp.svg" />
+                  </div>
+                  <div class="col-md-9">
+                    <h6 class="card-subtitle mb-2 font-bold"> ریپل <span class="text-gray font-normal"> (xrp) <span
+                          class="text-secondary"> 0.01 <img
+                            src="../front-end/img/icons/chevron-down-green.svg" /></span></span>
+                    </h6>
+                    <p class="card-text text-gray">1,063,225,112 تومان</p>
+                    <img src="../front-end/img/statistic.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <div class="card-body row">
+                  <div class="col-md-3">
+                    <img src="../front-end/img/flags/xrp.svg" />
+                  </div>
+                  <div class="col-md-9">
+                    <h6 class="card-subtitle mb-2 font-bold"> ریپل <span class="text-gray font-normal"> (xrp) <span
+                          class="text-secondary"> 0.01 <img
+                            src="../front-end/img/icons/chevron-down-green.svg" /></span></span>
+                    </h6>
+                    <p class="card-text text-gray">1,063,225,112 تومان</p>
+                    <img src="../front-end/img/statistic.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0 card-shadow">
+                <div class="card-body row">
+                  <div class="col-md-3">
+                    <img src="../front-end/img/flags/xrp.svg" />
+                  </div>
+                  <div class="col-md-9">
+                    <h6 class="card-subtitle mb-2 font-bold"> ریپل <span class="text-gray font-normal"> (xrp) <span
+                          class="text-secondary"> 0.01 <img
+                            src="../front-end/img/icons/chevron-down-green.svg" /></span></span>
+                    </h6>
+                    <p class="card-text text-gray">1,063,225,112 تومان</p>
+                    <img src="../front-end/img/statistic.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0 card-shadow">
+                <div class="card-body row">
+                  <div class="col-md-3">
+                    <img src="../front-end/img/flags/xrp.svg" />
+                  </div>
+                  <div class="col-md-9">
+                    <h6 class="card-subtitle mb-2 font-bold"> ریپل <span class="text-gray font-normal"> (xrp) <span
+                          class="text-secondary"> 0.01 <img
+                            src="../front-end/img/icons/chevron-down-green.svg" /></span></span>
+                    </h6>
+                    <p class="card-text text-gray">1,063,225,112 تومان</p>
+                    <img src="../front-end/img/statistic.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0 card-shadow">
+                <div class="card-body row">
+                  <div class="col-md-3">
+                    <img src="../front-end/img/flags/xrp.svg" />
+                  </div>
+                  <div class="col-md-9">
+                    <h6 class="card-subtitle mb-2 font-bold"> ریپل <span class="text-gray font-normal"> (xrp) <span
+                          class="text-secondary"> 0.01 <img
+                            src="../front-end/img/icons/chevron-down-green.svg" /></span></span>
+                    </h6>
+                    <p class="card-text text-gray">1,063,225,112 تومان</p>
+                    <img src="../front-end/img/statistic.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <section class="pt-5">
+      <div class="container text-center pb-4">
+        <h6 class="color-blue">لیست ارزها</h6>
+        <h5 class="font-bold mb-4">آخرین قیمت ارزهای دیجیتال</h5>
+
+        <div class="card border-0 card-shadow">
+          <div class="card-body">
+            <table class="table text-right border-0 bl-main-table">
+              <thead>
+                <tr>
+                  <th class="text-gray font-normal" scope="col"> ارز دیجیتال <img class="mr-2"
+                      src="../front-end/img/icons/chevron-up-down.svg" /></th>
+                  <th class="text-gray font-normal" scope="col"> تغییرات هفتگی</th>
+                  <th class="text-gray font-normal" scope="col"> قیمت <img class="mr-2"
+                      src="../front-end/img/icons/chevron-up-down.svg" /></th>
+                  <th class="text-gray font-normal" scope="col"> حجم بازار <img class="mr-2"
+                      src="../front-end/img/icons/chevron-up-down.svg" /></th>
+                  <th class="text-gray font-normal" scope="col"> امکانات</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th><img src="../front-end/img/flags/bitcoin-lg.svg" /> <img
+                      src="../front-end/img/icons/pin-gray.svg" /> <span class="card-subtitle h7 mb-2 font-bold"> بیت
+                      کوین <span class="text-gray font-normal"> (BTC)
+                      </span></span></th>
+                  <td><span class="signal-bg signal-bg-color">0.00%</span></td>
+                  <td>
+                    <h6 class="card-subtitle h7 mb-2 font-bold"> $32,573 </h6>
+                    <p class="text-gray">۸۱۳,۱۶۹,۲۸۴ تومان</p>
+                  </td>
+                  <td>
+                    <h6 class="card-subtitle h7 mb-2 font-bold"> $32,573 </h6>
+                    <p class="text-gray">۸۱۳,۱۶۹,۲۸۴ تومان</p>
+                  </td>
+                  <td>
+                    <img src="../front-end/img/icons/three-dots.svg" /></td>
+                </tr>
+                <tr>
+                  <th><img src="../front-end/img/flags/bitcoin-lg.svg" /> <img
+                      src="../front-end/img/icons/pin-gray.svg" /> <span class="card-subtitle h7 mb-2 font-bold"> بیت
+                      کوین <span class="text-gray font-normal"> (BTC)
+                      </span></span></th>
+                  <td><span class="signal-bg signal-bg-color-gray">0.00%</span></td>
+                  <td>
+                    <h6 class="card-subtitle h7 mb-2 font-bold"> $32,573 </h6>
+                    <p class="text-gray">۸۱۳,۱۶۹,۲۸۴ تومان</p>
+                  </td>
+                  <td>
+                    <h6 class="card-subtitle h7 mb-2 font-bold"> $32,573 </h6>
+                    <p class="text-gray">۸۱۳,۱۶۹,۲۸۴ تومان</p>
+                  </td>
+                  <td><img src="../front-end/img/icons/three-dots.svg" /></td>
+                </tr>
+                <tr>
+                  <th><img src="../front-end/img/flags/bitcoin-lg.svg" /> <img
+                      src="../front-end/img/icons/pin-gray.svg" /> <span class="card-subtitle h7 mb-2 font-bold"> بیت
+                      کوین <span class="text-gray font-normal"> (BTC)
+                      </span></span></th>
+                  <td><span class="signal-bg signal-bg-color-red opacity-30 text-red"><span>-0.00%</span></span></td>
+                  <td>
+                    <h6 class="card-subtitle h7 mb-2 font-bold"> $32,573 </h6>
+                    <p class="text-gray">۸۱۳,۱۶۹,۲۸۴ تومان</p>
+                  </td>
+                  <td>
+                    <h6 class="card-subtitle h7 mb-2 font-bold"> $32,573 </h6>
+                    <p class="text-gray">۸۱۳,۱۶۹,۲۸۴ تومان</p>
+                  </td>
+                  <td><img src="../front-end/img/icons/three-dots.svg" /></td>
+                </tr>
+                <tr>
+                  <th><img src="../front-end/img/flags/bitcoin-lg.svg" /> <img
+                      src="../front-end/img/icons/pin-gray.svg" /> <span class="card-subtitle h7 mb-2 font-bold"> بیت
+                      کوین <span class="text-gray font-normal"> (BTC)
+                      </span></span></th>
+                  <td><span class="signal-bg signal-bg-color-green opacity-30"><span class="text-green">0.00%</span>
+                  </td>
+                  <td>
+                    <h6 class="card-subtitle h7 mb-2 font-bold"> $32,573 </h6>
+                    <p class="text-gray">۸۱۳,۱۶۹,۲۸۴ تومان</p>
+                  </td>
+                  <td>
+                    <h6 class="card-subtitle h7 mb-2 font-bold"> $32,573 </h6>
+                    <p class="text-gray">۸۱۳,۱۶۹,۲۸۴ تومان</p>
+                  </td>
+                  <td><img src="../front-end/img/icons/three-dots.svg" /></td>
+                </tr>
+
+              </tbody>
+            </table>
+            <button type="button" class="btn btn-outline-secondary">
+              <span class="ml-2">مشاهده همه</span>
+              <img src="../front-end/img/icons/chevron-left.svg">
+            </button>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+    <section class="pt-5">
+      <div class="container text-center pb-4">
+        <h6 class="color-blue">بلاگ</h6>
+        <h5 class="font-bold mb-4">آکادمی آموزش</h5>
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <div class="card border-0 blog text-right" style="width: 18rem;">
+              <img class="card-img-top" src="../front-end/img/blog/blog-bitcoin.svg" alt="Card image cap">
+              <div class="card-body p-0">
+                <div class="d-flex py-3">
+                  <span class="date-bg text-center ml-3">
+                    6 ساعت پیش
+                  </span>
+                  <h6>اعمال محدودیت‌های فدرال حوزه ارزهای دیجیتال آغاز شده</h6>
+                </div>
+
+                <p class="text-gray">معمولاً طراحان گرافیک برای صفحه‌آرایی، نخست از آزمایشی و بی‌معنی یا صاحب‌کار خود
+                  نشان گیرد،متن در آن قرار گیرد</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 blog text-right" style="width: 18rem;">
+              <img class="card-img-top" src="../front-end/img/blog/blog-bitcoin.svg" alt="Card image cap">
+              <div class="card-body p-0">
+                <div class="d-flex py-3">
+                  <span class="date-bg text-center ml-3">
+                    6 ساعت پیش
+                  </span>
+                  <h6>اعمال محدودیت‌های فدرال حوزه ارزهای دیجیتال آغاز شده</h6>
+                </div>
+
+                <p class="text-gray">معمولاً طراحان گرافیک برای صفحه‌آرایی، نخست از آزمایشی و بی‌معنی یا صاحب‌کار خود
+                  نشان گیرد،متن در آن قرار گیرد</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 blog text-right" style="width: 18rem;">
+              <img class="card-img-top" src="../front-end/img/blog/blog-bitcoin.svg" alt="Card image cap">
+              <div class="card-body p-0">
+                <div class="d-flex py-3">
+                  <span class="date-bg text-center ml-3">
+                    6 ساعت پیش
+                  </span>
+                  <h6>اعمال محدودیت‌های فدرال حوزه ارزهای دیجیتال آغاز شده</h6>
+                </div>
+
+                <p class="text-gray">معمولاً طراحان گرافیک برای صفحه‌آرایی، نخست از آزمایشی و بی‌معنی یا صاحب‌کار خود
+                  نشان گیرد،متن در آن قرار گیرد</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button type="button" class="btn btn-outline-secondary">
+          <span class="ml-2">مشاهده همه</span>
+          <img src="../front-end/img/icons/chevron-left.svg">
+        </button>
+
+
+      </div>
+    </section>
+    <section class="container-fluid application-display text-right my-5 p-0">
+      <div class="d-flex">
+        <div class="col-md-5 pr-0 d-flex justify-content-start">
+          <img class="position-absolute img-three-app" src="../front-end/img/app-three-bg.svg" />
+          <img src="../front-end/img/application-rectangle-bg.svg" />
+        </div>
+        <div class="col-md-6 pr-10">
+          <h6 class="color-blue">اپلیکیشن</h6>
+          <h5 class="font-bold mb-4">به راحتی خرید و فروش ارز دیجیتال را انجام دهید</h5>
+          <p class="text-gray">
+            با استفاده از اپلیکیشن آپ، علاوه بر دسترسی به تمامی خدمات می‌توانید از امکانات کامل‌تری مانند دريافت موجودی،
+            پرداخت سریع قبوض از طریق اسکن بارکدخوان، انتقال وجه کارت به کارت، خرید بیمه شخص ثالث، خرید بلیت قطار،
+            تله‌پرداز (پرداخت بدون کارت)، خرید سیم‌کارت‌های آپتل، شرکت در مسابقات و جشنواره‌های کلوپ آپ و... بهره‌مند
+            شوید.
+          </p>
+          <div class="row">
+            <div class="col-md-5 pl-0"><img src="../front-end/img/googlePlay.svg" /></div>
+            <div class="col-md-5 pr-0"><img src="../front-end/img/Ios.svg" /></div>
+
+          </div>
+        </div>
+        <div class="col-md-1 application-bg-left pl-0">
+          <img class="img-fluid" src="../front-end/img/application-bg.svg" />
+        </div>
+      </div>
+
+    </section>
+    <section class="container-fluid text-center reason-bitlet my-5 p-0">
+      <h6 class="color-blue">دلایل ما</h6>
+      <h5 class="font-bold mb-4">چرا بیت لت</h5>
+      <div class="d-flex">
+        <div class="col-md-5 text-right d-flex">
+          <ul>
+            <li>
+              <div class="card border-0 card-shadow mb-4">
+                <div class="card-body row">
+                  <div class="col-md-2">
+                    <img src="../front-end/img/icons/wage.svg">
+                  </div>
+                  <div class="col-md-9">
+                    <h6 class="card-subtitle mb-2 font-bold"> کارمزد رقابتی </h6>
+                    <p class="card-text text-gray">کارمزد خرید و فروش در نوبیتکس بسیار کم است و با بالاتر رفتن حجم
+                      معاملات
+                      کاهش می‌یابد</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card border-0 card-shadow linear-bg text-white mb-4 mr-5">
+                <div class="card-body row">
+                  <div class="col-md-2">
+                    <img src="../front-end/img/icons/back-forward-arrow.svg">
+                  </div>
+                  <div class="col-md-9">
+                    <h6 class="card-subtitle mb-2 font-bold"> پرداخت با کارت های شتاب </h6>
+                    <p class="card-text">معامله انواع رمزارز با تومان از طریق واریز و برداشت با کارت‌های بانکی عضو شتاب</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card border-0 card-shadow">
+                <div class="card-body row">
+                  <div class="col-md-2">
+                    <img src="../front-end/img/icons/secure.svg">
+                  </div>
+                  <div class="col-md-9">
+                    <h6 class="card-subtitle mb-2 font-bold">خرید و فروش امن و سریع</h6>
+                    <p class="card-text">ثبت سفارش در ۲۴ ساعت به صورت آنلاین و کاملا اتوماتیک نقد کردن ارزها به ) تومان ( در کمتر از ۱۲ ساعت کاری</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+
+        </div>
+        <div class="col-md-7 pl-0 text-left">
+          <img class="position-absolute l-0" src="../front-end/img/rectangle-left.svg" />
+          <img class="position-absolute reason-big-circle" src="../front-end/img/reason-circle.svg" />
+          <img class="position-absolute reason-small-circle" src="../front-end/img/reason-circle.svg" />
+          <img src="../front-end/img/reason-bitlet-left-pic.svg" />
+        </div>
+      </div>
+
+    </section>
+    <Footer class="text-right">
+      <div class="container d-flex pt-5">
+        <div class="col-md-3">
+          <span class="font-bold">پشتیبانی</span>
+          <ul class="pr-0 font-normal">
+            <li class="">تماس ما</li>
+            <li class="">درباره ما</li>
+            <li class="">قوانین و مقررات</li>
+            <li class="">تماس با ما</li>
+          </ul>
+        </div>
+        <div class="col-md-3 pr-0">
+          <span class="font-bold">خدمات</span>
+          <ul class="pr-0 font-normal">
+            <li class="">نرخ لحظه ای ارز</li>
+            <li class="">فرصت های شغلی</li>
+            <li class="">ورود / ثبت نام</li>
+          </ul>
+        </div>
+        <div class="col-md-2 pr-0">
+          <span class="font-bold">خدمات</span>
+          <ul class="pr-0 font-normal">
+            <li class="">نرخ لحظه ای ارز</li>
+            <li class="">فرصت های شغلی</li>
+            <li class="">ورود / ثبت نام</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <img class="ml-2 mb-3" src="../front-end/img/logo.svg" /><span class="font-bold">چیست؟</span>
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+            متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+            متنوع با هدف بهبود </p>
+        </div>
+      </div>
+    </Footer>
+
+
+  </div>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 40,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    function filterFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      div = document.getElementById("myDropdown");
+      a = div.getElementsByTagName("a");
+      for (i = 0; i < a.length; i++) {
+        txtValue = a[i].textContent || a[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          a[i].style.display = "";
+        } else {
+          a[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
